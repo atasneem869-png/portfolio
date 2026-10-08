@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <div id="main">
+
+        <div id="navbar">
+
+            <img src="https://newyork.fieldthemes.com/jewelry1/img/jewelry-logo-1575627632.jpg" alt="">
+
+            <a href="index.html">HOME</a>
+
+            <a href="index.html#about">FEATURED</a>
+
+            <a href="store.html">STORE</a>
+
+            <a href="cart.html">CART</a>
+
+            <button id="searchIcon" onclick="showSearch()">⌕</button>
+
+            <div id="searchBox">
+
+                <input type="text" placeholder="Search" id="searchInput">
+
+                <button onclick="doSearch()">Search</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <h1>My Cart</h1>
+
+    <div id="cart"></div>
+
+    <h2 id="total"></h2>
+
+    <button id="submitItems" onclick="goToInformation()">
+        Submit Items
+    </button>
+
+    <script src="cart.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

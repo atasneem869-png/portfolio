@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="navbar">
+            <img src="https://newyork.fieldthemes.com/jewelry1/img/jewelry-logo-1575627632.jpg" alt="">
+            <a href="index.html">HOME</a>
+            <a href="index.html#about">FEATURED</a>
+            <a href="store.html">STORE</a>
+            <a href="cart.html">CART</a>
+            
+
+            <button id="searchIcon" onclick="showSearch()">⌕</button>
+
+            <div id="searchBox">
+                <input type="text" placeholder="Search" id="searchInput">
+                <button onclick="doSearch()">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="store-header">
+        <img src="https://newyork.fieldthemes.com/jewelry1/modules/fieldthemecustomizer/views/img/front/bg/background-page-1.png" alt="">
+        <span id="s">STORE</span>
+    </div>
+
+    <div class="products-container">
+        
+        <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/29-home_default/agonfly-jewelry.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars">★★★★★</div>
+                <div class="title">Agonfly Jewelry</div>
+                <div class="price">
+                    <span class="current-price">$210.00</span>
+                    <span class="old-price"><del>$230.00</del></span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/31-home_default/angel-wings.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars">★★★★★</div>
+                <div class="title">Angel Wings</div>
+                <div class="price">
+                    <span class="current-price">$210.00</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/32-home_default/aondevio-earrings.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars">★★★★★</div>
+                <div class="title">Aondevio</div>
+                <div class="price">
+                    <span class="current-price">$240.00</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/35-home_default/ariel-ring.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars">★★★★</div>
+                <div class="title">Ariel Ring</div>
+                <div class="price">
+                    <span class="current-price">$320.00</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/37-home_default/artier-earrings.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars">★★★★★</div>
+                <div class="title">Artier Rings</div>
+                <div class="price">
+                    <span class="current-price">$230.00</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/39-home_default/artifical-earings.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars">★★★★</div>
+                <div class="title">Artificial Earings</div>
+                <div class="price">
+                    <span class="current-price">$230.00</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/40-home_default/artifical-ring.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars">★★★★</div>
+                <div class="title">Artificial Ring</div>
+                <div class="price">
+                    <span class="current-price">$230.00</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                </div>
+            </div>
+        </div>
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/43-home_default/azrouel-variable.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars">★★★★★</div>
+                <div class="title">Azroul Variable</div>
+                <div class="price">
+                    <span class="current-price">$230.00</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/27-home_default/cartier-ring-new.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Cartier Ring</div>
+                <div class="price">
+                    <span class="current-price">$220.00</span>
+                     <span class="old-price"><del>$230.00</del></span>
+                     <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+
+                </div>
+            </div>
+        </div>
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/55-home_default/cartier-ring.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" >★★★★★</div>
+                <div class="title">Cartier Ring</div>
+                <div class="price">
+                    <span class="current-price">$230.00</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/68-home_default/wedding-ring.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" >★★★★★</div>
+                <div class="title">Cartier Earing</div>
+                <div class="price">
+                    <span class="current-price">$120.00</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/49-home_default/brown-bear-cushion.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Artifical Earing</div>
+                <div class="price">
+                    <span class="current-price">$18.90</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/45-home_default/mountain-fox-notebook.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Azrouel Variable</div>
+                <div class="price">
+                    <span class="current-price">$12.90</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/19-home_default/brown-bear-notebook.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Brown bear notebook</div>
+                <div class="price">
+                    <span class="current-price">$12.90</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/14-home_default/hummingbird-cushion.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Hummingbird cushion</div>
+                <div class="price">
+                    <span class="current-price">$18.90</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/20-home_default/hummingbird-notebook.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Hummingbird notebook</div>
+                <div class="price">
+                    <span class="current-price">$12.90</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+          <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/10-home_default/mountain-fox-cushion.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Mountain fox cushion</div>
+                <div class="price">
+                    <span class="current-price">$18.90</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/7-home_default/mug-the-adventure-begins.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Mug The adventure begins</div>
+                <div class="price">
+                    <span class="current-price">$11.90</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/6-home_default/mug-the-best-is-yet-to-come.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Mug The best is yet to come</div>
+                <div class="price">
+                    <span class="current-price">$11.90</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="product-item">
+            <div class="image-box">
+                <img src="https://newyork.fieldthemes.com/jewelry1/8-home_default/mug-today-is-a-good-day.jpg" alt="" class="products">
+            </div>
+            <div class="rate">
+                <div class="stars" ></div>
+                <div class="title">Mug Today is a good day</div>
+                <div class="price">
+                    <span class="current-price">$11.90</span>
+                    <div><input type="number" placeholder="no of item" min="1" max="20" class="inp"></div>
+                    <div><button class="btn" onclick="add(this)">add to cart</button></div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="store.js"></script>
+     <script src="./script.js"></script>
+
+</body>
+</html>
