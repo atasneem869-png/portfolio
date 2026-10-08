@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#logo {
+    width: 290px;
+    height: auto;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding-left: 0;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    position: static;
+    transition: 0.3s;
+}
+
+#navbar a:hover {
+    color: #c4a104;
+}
+
+#home {
+    width: 100%;
+    height: 900px;
+    background-image: url("https://newyork.fieldthemes.com/jewelry1/modules/revsliderprestashop/uploads/home1_slide1.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hometopic {
+    color: white;
+    width: 1200px;
+    font-size: 40px;
+    padding-left: 600px;
+}
+
+#j {
+    font-size: 20px;
+}
+
+#shopbutton {
+    background-color: #c4a104;
+    width: 200px;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#shopbutton:hover {
+    transform: scale(1.1);
+}
+
+#searchIcon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#searchIcon:hover {
+    color: #c4a104;
+}
+
+#searchBox {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 10%;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#searchInput {
+    width: 250px;
+    height: 35px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+#searchBox button {
+    height: 39px;
+    background-color: #c4a104;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+#info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    padding: 35px 0;
+    background-color: white;
+}
+
+.info-box {
+    width: 328px;
+    height: 77px;
+    border: 1px dashed #c4a104;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.info-box i {
+    font-size: 27px;
+    color: #b58a28;
+    margin-right: 25px;
+}
+
+.info-box p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    color: #555;
+}
+
+.info-box p span {
+    display: block;
+    font-size: 18px;
+    color: #111;
+}
+
+#deal { background: url("https://newyork.fieldthemes.com/jewelry1/themes/jewelry_theme1/assets/images/today-deal.png"); background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; width: 100%; height: 610px; margin-left: 0; padding-left: 175.5px; padding-right: 175.5px; top: 35px; z-index: 4; }
+ #d { font-size: 18px; font-weight: 600; color: #888; margin-bottom: 10px; }
+  #sale { font-size: 42px; font-weight: bold; color: #222; margin-bottom: 20px; } 
+  #saleinfo { font-size: 16px; color: #777; margin: auto; position: relative; top: 10px; left: 10px; }
+   #l{ padding-top:250px ; padding-right:145px; }
+    .item { width: 340px; height: 515px; position: relative; z-index: 5; left: 750px; bottom: 245px; } 
+   .item img { width: 100%; height: auto; display: block; }
+
+#newproduct {
+    width: 100%;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#newproducts {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+#newitems {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#newitems .item {
+    width: 340px;
+    height: auto;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newitems .item img {
+    width: 340px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.rate {
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+.rate span {
+    color: #888;
+    margin-left: 8px;
+}
+
+#about {
+    width: 100%;
+    height: 611px;
+    display: flex;
+    position: relative;
+    margin-top: 50px; 
+}
+
+#aboutimg {
+    width: 690px;
+    height: 611px;
+    object-fit: cover;
+}
+
+#abt {
+    width: calc(100% - 690px);
+    height: 611px;
+    background-color: #000;
+}
+
+#border {
+    width: 712px;
+    height: 413px;
+    border: 5px solid white;
+    position: absolute;
+    top: 115px;
+    right: 550px;
+    z-index: 10;
+    color: white;
+}
+
+.text {
+    color: #daa105;
+}
+
+
+#i3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 80px;
+    bottom: 155px;
+    color: white;
+    z-index: 20;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    gap: 70px;
+}
+
+#summer-section {
+    width: 1173px;
+    height: 437px;
+    margin: 60px auto; 
+    background-image: url("https://newyork.fieldthemes.com/jewelry1/themes/jewelry_theme1/assets/images/today-deal.png"); 
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 0;
+    position: relative;
+    right: 100px;
+    top: 225px;
+    margin-bottom: 410px; 
+}
+
+.summer-img-box {
+    width: 65%;
+}
+
+.summer-img-box img {
+    width: 100%;
+    display: block;
+}
+
+.summer-card {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 380px;
+    height: 330px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    z-index: 2;
+}
+
+.card-border {
+    border: 2px solid #a47b52;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-border .trending {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card-border h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 34px;
+    font-weight: normal;
+    color: #222;
+    margin: 0 0 25px 0;
+}
+
+.card-border .shop-btn {
+    background-color: #a47b52;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-border .shop-btn:hover {
+    background-color: #8a643f;
+}
